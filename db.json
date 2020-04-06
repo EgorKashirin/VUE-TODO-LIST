@@ -1,3 +1,32 @@
 {
-    "Data": {}
+    "Data": {
+        "Tasks": [
+            {
+                "title": "Купить в магазине",
+                "isSuccess": false,
+                "Items": {
+                    "Хлеб": false,
+                    "Молоко": true,
+                    "Печенье": false
+                }
+            },
+            {
+                "title": "Дела по дому",
+                "isSuccess": false,
+                "Items": {
+                    "Помыть посуду": true,
+                    "Пропылесосить": false
+                }
+            },
+            {
+                "title": "Работа",
+                "isSuccess": false,
+                "Items": {
+                    "Написать код": true,
+                    "Сверстать сайт": true,
+                    "Отправить работу": false
+                }
+            }
+        ]
+    }
 }
