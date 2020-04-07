@@ -3,7 +3,7 @@
         "Tasks": [
             {
                 "title": "Купить в магазине",
-                "isSuccess": false,
+                "isSuccess": true,
                 "Items": {
                     "Хлеб": false,
                     "Молоко": true,
@@ -12,7 +12,7 @@
             },
             {
                 "title": "Дела по дому",
-                "isSuccess": false,
+                "isSuccess": true,
                 "Items": {
                     "Помыть посуду": true,
                     "Пропылесосить": false
