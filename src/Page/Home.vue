@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- DIV Application -->
     <div id="application">
       <h1>App Todo List</h1>
       <router-link
@@ -28,6 +29,8 @@
         </div>
       </div>
     </div>
+
+    <!-- -------->
     <!-- DIV УДАЛЕНИЯ -->
     <div id="Delete" v-if="isDelete">
       <div class="windows-delete">
@@ -38,21 +41,21 @@
         </div>
       </div>
     </div>
+    <!-- -------->
   </div>
 </template>
 
 <script>
 export default {
   name: "Home",
-  components: {},
   data() {
     return {
-      dataarray: [],
-      id_task: "item_key",
-      id_check: "isSuccess",
-      lengthitems: 0,
-      isDelete: false,
-      indexDelete: 0
+      dataarray: [], //Массив Data
+      id_task: "item_key", //Ключ для создания нового элемента
+      id_check: "isSuccess", //Ключ для создания нового элемента
+      lengthitems: 0, //Сюда будет записан кол-во Задач
+      isDelete: false, //Флаг показать/скрыть модальное окно
+      indexDelete: 0 //Индекс удаления элемента
     };
   },
   beforeCreate() {
@@ -79,16 +82,20 @@ export default {
   },
   methods: {
     remove(index) {
+      //Функция вызывает окно (Вы действительно хотите удалить?)
       this.isDelete = true;
       this.indexDelete = index;
     },
     edit(index) {
+      //Режим редактирования Item
       this.$router.push({ name: "Detail", params: { id: index } });
     },
     no() {
+      //Функция для модального окна удаления
       this.isDelete = false;
     },
     yes() {
+      //Функция для модального окна удаления
       this.dataarray.Tasks.splice(this.indexDelete, 1);
       const data = this.dataarray;
       this.$http.post("http://localhost:3000/Data", data);
