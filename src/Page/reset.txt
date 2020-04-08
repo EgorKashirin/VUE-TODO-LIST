@@ -1,4 +1,0 @@
- <h2>{{itemarray.Tasks[index].title}}</h2>
-            <ul v-for="(item, indexx) in itemarray.Tasks[index].Items" :key="indexx">
-              <input type="checkbox" id="checkbox" ><li>{{indexx}}</li>
-            </ul> 

@@ -10,11 +10,6 @@ export default new VueRouter({
             component: Home
         },
         {
-            path: '/detail',
-            name: 'Detail',
-            component: Detail,
-        },
-        {
             path: '/detail/:id',
             name: 'Detail',
             component: Detail,

@@ -1,32 +1,43 @@
 {
-    "Data": {
-        "Tasks": [
-            {
-                "title": "Купить в магазине",
-                "isSuccess": true,
-                "Items": {
-                    "Хлеб": false,
-                    "Молоко": true,
-                    "Печенье": false
-                }
-            },
-            {
-                "title": "Дела по дому",
-                "isSuccess": true,
-                "Items": {
-                    "Помыть посуду": true,
-                    "Пропылесосить": false
-                }
-            },
-            {
-                "title": "Работа",
-                "isSuccess": false,
-                "Items": {
-                    "Написать код": true,
-                    "Сверстать сайт": true,
-                    "Отправить работу": false
-                }
-            }
+  "Data": {
+    "Tasks": [
+      {
+        "title": "Дома",
+        "isSuccess": false,
+        "Items": [
+          {
+            "item_key": "Пылесосить",
+            "isSuccess": false
+          },
+          {
+            "item_key": "Стирка",
+            "isSuccess": false
+          },
+          {
+            "item_key": "Готовка",
+            "isSuccess": false
+          }
         ]
-    }
+      },
+      {
+        "title": "Работа",
+        "isSuccess": false,
+        "Items": [
+          {
+            "item_key": "Хлеб",
+            "isSuccess": true
+          },
+          {
+            "item_key": "Молоко",
+            "isSuccess": true
+          },
+          {
+            "item_key": "Хлеб",
+            "isSuccess": true
+          }
+        ]
+      }
+    ]
+  },
+  "Buffer": {}
 }
