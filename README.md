@@ -1,24 +1,14 @@
 # vue-todo-list
 
 ## Project setup
+
+### Запуск JSON SERVER
 ```
-npm install
+npm run json
 ```
 
-### Compiles and hot-reloads for development
+### Запуск проекта
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
